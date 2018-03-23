@@ -21,6 +21,13 @@ class MovieDatabaseSummarizerTest {
                 () -> {
                     Assertions.assertEquals(Integer.valueOf(29947), numberOfMovies);
                     Assertions.assertEquals(Integer.valueOf(274570), numberOfActors);
+
+                    Assertions.assertEquals((5), mostRatedMovies.size() );
+                    Assertions.assertEquals("Reckless (10.0)", mostRatedMovies.get(0));
+                    Assertions.assertEquals("Girl in the Cadillac (10.0)",mostRatedMovies.get(1));
+                    Assertions.assertEquals("The Haunted World of Edward D. Wood, Jr. (10.0)", mostRatedMovies.get(2));
+                    Assertions.assertEquals("Carmen Miranda: Bananas Is My Business (10.0)", mostRatedMovies.get(3));
+                    Assertions.assertEquals("Other Voices Other Rooms (10.0)", mostRatedMovies.get(4));
                 }
         );
     }
