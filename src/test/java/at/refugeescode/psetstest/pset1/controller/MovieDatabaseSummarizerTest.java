@@ -28,6 +28,15 @@ class MovieDatabaseSummarizerTest {
                     Assertions.assertEquals("The Haunted World of Edward D. Wood, Jr. (10.0)", mostRatedMovies.get(2));
                     Assertions.assertEquals("Carmen Miranda: Bananas Is My Business (10.0)", mostRatedMovies.get(3));
                     Assertions.assertEquals("Other Voices Other Rooms (10.0)", mostRatedMovies.get(4));
+
+                    Assertions.assertEquals(5, mostHiredActors.size());
+                    Assertions.assertEquals("Bess Flowers (82)", mostHiredActors.get(0));
+                    Assertions.assertEquals("Christopher Lee (69)", mostHiredActors.get(1));
+                    Assertions.assertEquals("Grey Griffin (58)", mostHiredActors.get(2));
+                    Assertions.assertEquals("Danny Trejo (54)", mostHiredActors.get(3));
+                    Assertions.assertEquals("Eric Roberts (52)", mostHiredActors.get(4));
+
+
                 }
         );
     }
