@@ -40,7 +40,7 @@ class MovieDatabaseSummarizerTest {
                     Assertions.assertEquals("Drama (14495)", mostAppearingGenres.get(0));
                     Assertions.assertEquals("Comedy (8955)", mostAppearingGenres.get(1));
 
-                    
+                    Assertions.assertEquals("64.1 %female, 35.9 %male",maleFemaleRatio);
                 }
         );
     }
