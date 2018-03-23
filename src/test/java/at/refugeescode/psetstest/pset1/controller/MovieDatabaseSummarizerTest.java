@@ -36,7 +36,11 @@ class MovieDatabaseSummarizerTest {
                     Assertions.assertEquals("Danny Trejo (54)", mostHiredActors.get(3));
                     Assertions.assertEquals("Eric Roberts (52)", mostHiredActors.get(4));
 
+                    Assertions.assertEquals(2, mostAppearingGenres.size());
+                    Assertions.assertEquals("Drama (14495)", mostAppearingGenres.get(0));
+                    Assertions.assertEquals("Comedy (8955)", mostAppearingGenres.get(1));
 
+                    
                 }
         );
     }
